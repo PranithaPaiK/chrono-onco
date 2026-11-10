@@ -1,0 +1,7 @@
+# Backend files - exclude from frontend deployment
+backend/
+routers/
+*.py
+requirements.txt
+render.yaml
+__pycache__/
