@@ -1,8 +1,9 @@
 import React from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Activity } from 'lucide-react';
+import { Activity, Box } from 'lucide-react';
 import Dashboard from './pages/Dashboard';
 import DeviceSimulation from './pages/DeviceSimulation';
+import Hardware3D from './pages/Hardware3D';
 
 function App() {
   const location = useLocation();
@@ -40,6 +41,15 @@ function App() {
             <Activity className="w-5 h-5" />
             <span>Device Simulation</span>
           </Link>
+          <Link
+            to="/hardware-3d"
+            className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
+              location.pathname === '/hardware-3d' ? 'bg-blue-600' : 'hover:bg-slate-800'
+            }`}
+          >
+            <Box className="w-5 h-5" />
+            <span>3D Hardware</span>
+          </Link>
         </div>
 
         <div className="absolute bottom-6 left-6 right-6">
@@ -55,6 +65,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/device-simulation" element={<DeviceSimulation />} />
+          <Route path="/hardware-3d" element={<Hardware3D />} />
         </Routes>
       </div>
     </div>

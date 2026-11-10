@@ -15,7 +15,10 @@
     "recharts": "^2.12.7",
     "lucide-react": "^0.400.0",
     "date-fns": "^3.6.0",
-    "axios": "^1.6.2"
+    "axios": "^1.6.2",
+    "@react-three/fiber": "^8.15.12",
+    "@react-three/drei": "^9.92.7",
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
