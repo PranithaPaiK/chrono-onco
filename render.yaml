@@ -8,3 +8,5 @@ services:
     envVars:
       - key: FRONTEND_URL
         value: https://your-frontend-url.vercel.app
+      - key: PYTHON_VERSION
+        value: 3.12
